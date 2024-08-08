@@ -25,6 +25,7 @@ let data = []
 let data2 = []
 for (let i=0; i<columns.length; i++) {
      data = columns[i].split(",")
-     console.log(data)
+     data2.push(data) 
+     
     
-}
+}console.log(data2)
