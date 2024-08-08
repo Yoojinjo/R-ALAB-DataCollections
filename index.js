@@ -70,6 +70,8 @@ result2.push({ id: "7", name: "Bilbo", occupation: "None", age: "111" });
 
 // Finally, use the values of each object within the array and the array’s length property to calculate the average age of the group. This calculation should be accomplished using a loop.
 // Average Age == TotalAge/numberOfPeople
-for (let i=0; i<result2.length; i++) {
-
+let TotalAge = 0;
+for (let i = 0; i < result2.length; i++) {
+    TotalAge += result2[i].age;
 }
+console.log(TotalAge);
