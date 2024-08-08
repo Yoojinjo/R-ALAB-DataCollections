@@ -96,5 +96,5 @@ let row2 = result2.map(obj =>
   );
   console.log(row2)
 
-let csv2 = (headersRow, row2).join("\n")
+let csv2 = [headersRow, row2].join("\n")
 console.log(csv2)
