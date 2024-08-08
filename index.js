@@ -79,3 +79,22 @@ for (let i = 0; i < result2.length; i++) {
 console.log(TotalAge);
 let AverageAge = TotalAge/result2.length
 console.log(AverageAge)
+
+// PART 5
+// As a final task, transform the final set of data back into CSV format.
+// get headers
+let headers = Object.keys(result2[0]);
+console.log(headers)
+
+/// join the headers into string
+let headersRow = headers.join(',');
+console.log(headersRow)
+
+// change object to string
+let row2 = result2.map(obj => 
+    headers.map(header => obj[header]).join(',')
+  );
+  console.log(row2)
+
+let csv2 = (headersRow, row2).join("\n")
+console.log(csv2)
