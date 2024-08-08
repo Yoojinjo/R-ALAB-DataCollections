@@ -72,6 +72,10 @@ result2.push({ id: "7", name: "Bilbo", occupation: "None", age: "111" });
 // Average Age == TotalAge/numberOfPeople
 let TotalAge = 0;
 for (let i = 0; i < result2.length; i++) {
-    TotalAge += result2[i].age;
+    TotalAge += Number(result2[i].age);
+    
 }
+
 console.log(TotalAge);
+let AverageAge = TotalAge/result2.length
+console.log(AverageAge)
